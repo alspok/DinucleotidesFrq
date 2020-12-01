@@ -1,0 +1,58 @@
+﻿@model DinucleotidesFrq.Models.MultipleModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row  justify-content-center">
+        <h2>Sequence input</h2>
+    </div>
+    <div class="row  justify-content-center">
+        <p style="color: black">Enter A, C, G, T or a, c, g, t only</p>
+    </div>
+        @using(Html.BeginForm("SeqIn" , "SeqInput", FormMethod.Post))
+        {
+            <div class="row justify-content-center">
+                @Html.TextAreaFor(s => s.Seq.Seq, new{@class="text-area"})
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                <button>Calculate</button>
+            </div>
+        }
+</div>
+
+<div class="container-fluid">
+    <div class=" row justify-content-center">
+        <br>
+        <h2>Choose sequence</h2>
+    </div>
+        @using (Html.BeginForm("SeqIn", "SeqInput", FormMethod.Post))
+            {
+            <civ class="row justify-content-left">
+                <div class="col-md-2">
+                    <a> Test seq: </a>
+                </div>
+                <div class="col-md-10">
+                    @Html.DisplayFor(t => t.Seq.TestSeq)
+                    <button name="choose" value="add-test">Add</button>
+                </div>
+            </civ>
+            <div class="row">
+                <div class="col-md-2">
+                    <a>Random seq(100 bp): </a>
+                </div>
+                <div class="col-md-10">
+                    @Html.DisplayFor(r => r.Seq.RandSeq)
+                    <button name="choose" value="make-random">Make seq</button>
+                    <button name="choose" value="add-random">Add</button>
+                </div>
+            </div>
+            <div class="row justify-content-left">
+                <div class="col-md-2">
+                <a>Select from GB: </a>
+                </div>
+            </div>
+            }
+</div>

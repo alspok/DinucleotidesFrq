@@ -1,0 +1,21 @@
+﻿.header-bar {
+    padding:    20px 20px;
+    vertical-align: middle;
+    height: 80px;
+    background-color:    lightgrey;
+}
+
+.footer-bar{
+  padding:    10px 15px;
+  background-color:    lightgrey;
+  border-top:  1px solid #ddd;
+  border-bottom-right-radius:   3px;
+  border-bottom-left-radius::   3px;
+}
+
+.text-area{
+    width: 60%;
+    height: 150px;
+    background-color:   lightgrey;
+    
+}

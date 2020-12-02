@@ -5,10 +5,10 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <title>DinucCalc</title>
-</head>
-<body>
+    <head>
+        <title>DinucCalc</title>
+    </head>
+    <body>
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <br>
@@ -17,37 +17,47 @@
             </div>
             <div class="row">
                 <p><b>Sequence: </b>@Model.Seq.Seq</p>
+            </div>
+            <div class="row">
                 <p><b>Sequence length: </b>@Model.Seq.Seq.Length</p>
             </div>
+
             <div class="row justify-content-center">
                 <table>
                     <thead>
                         <tr>
-                            <td>Dinuc</td>
-                                @foreach(var item in Model.DinucList.dinucleotides)
-                                    {<td>@item.Dinuc</td>}
+                            <th>Dinuc</th>
+                                @foreach(var item in Model.Dinuc.dinucleotides)
+                                    {<th>@item.Dinuc</th>}
                         </tr>
-                    </thead>
+                    </thead>    
                     <tbody>
                         <tr>
                             <td>1st frame</td>
-                                @foreach(var item in Model.DinucList.dinucleotides)
-                                    {<td>@item.Dunuc1stFrameFrq</td>}
+                            @foreach(var item in Model.Dinuc.dinucleotides)
+                                    {
+                                        <td>@item.Dinuc1stFrameFrq.ToString("0.000")</td>
+                                    }
                         </tr>
                         <tr>
                             <td>2nd frame</td>
-                                @foreach(var item in Model.DinucList.dinucleotides)
-                                    {<td>@item.Dunuc2ndFrameFrq</td>}
+                            @foreach(var item in Model.Dinuc.dinucleotides)
+                                    {
+                                        <td>@item.Dinuc2ndFrameFrq</td>
+                                    }
                         </tr>
                         <tr>
                             <td>Dinuc diff</td>
-                                @foreach(var item in Model.DinucList.dinucleotides)
-                                    {<td>@item.DunucFrqDiff</td>}
+                            @foreach(var item in Model.Dinuc.dinucleotides)
+                                    {
+                                        <td>@item.DinucFrqDiff</td>
+                                    }
                         </tr>
                     </tbody>
                 </table>
             </div>
+            
         </div>
-</body>
+    </body>
 </html>
 

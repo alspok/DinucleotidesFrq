@@ -1,4 +1,5 @@
 ﻿@model DinucleotidesFrq.Models.MultipleModel
+@using DinucleotidesFrq.Helpers
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -9,16 +10,27 @@
         <h2>Sequence input</h2>
     </div>
     <div class="row  justify-content-center">
-        <p style="color: black">Enter A, C, G, T or a, c, g, t only</p>
+        @{
+            Match match = new Match();
+            match.MatchSeq(Model);
+            if(Model.Seq.SeqMatch)
+            {
+                <p style="color: black">Enter A, C, G, T or a, c, g, t only</p>
+            }
+            else
+            {
+                <p style="color: red">Enter A, C, G, T or a, c, g, t only</p>
+            }
+        }
     </div>
-        @using(Html.BeginForm("SeqIn" , "SeqInput", FormMethod.Post))
+        @using(Html.BeginForm("Calculation" , "DinucCalc", FormMethod.Post))
         {
             <div class="row justify-content-center">
                 @Html.TextAreaFor(s => s.Seq.Seq, new{@class="text-area"})
             </div>
             <br>
             <div class="row justify-content-center">
-                <button>Calculate</button>
+                <button value="calculate">Calculate</button>
             </div>
         }
 </div>

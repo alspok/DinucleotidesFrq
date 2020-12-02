@@ -1,13 +1,15 @@
 ﻿using System;
+using DinucleotidesFrq.Models;
 using System.Text.RegularExpressions;
 
 namespace DinucleotidesFrq.Helpers
 {
     public class Match
     {
-        public bool MatchSeq(string seq)
+        public void  MatchSeq(MultipleModel multipleModel)
         {
-            return Regex.IsMatch(seq, @"^[a-zA-Z0-9]*$");
+            if (!Regex.IsMatch(multipleModel.Seq.Seq, @"^[ACGTacgt]*$"))
+                multipleModel.Seq.SeqMatch = false;
         }
     }
 }

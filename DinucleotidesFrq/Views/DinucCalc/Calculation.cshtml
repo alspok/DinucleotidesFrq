@@ -1,0 +1,53 @@
+﻿@model DinucleotidesFrq.Models.MultipleModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DinucCalc</title>
+</head>
+<body>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <br>
+                <h2>Dinucleotides frq calculation</h2>
+                <br>
+            </div>
+            <div class="row">
+                <p><b>Sequence: </b>@Model.Seq.Seq</p>
+                <p><b>Sequence length: </b>@Model.Seq.Seq.Length</p>
+            </div>
+            <div class="row justify-content-center">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Dinuc</td>
+                                @foreach(var item in Model.DinucList.dinucleotides)
+                                    {<td>@item.Dinuc</td>}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1st frame</td>
+                                @foreach(var item in Model.DinucList.dinucleotides)
+                                    {<td>@item.Dunuc1stFrameFrq</td>}
+                        </tr>
+                        <tr>
+                            <td>2nd frame</td>
+                                @foreach(var item in Model.DinucList.dinucleotides)
+                                    {<td>@item.Dunuc2ndFrameFrq</td>}
+                        </tr>
+                        <tr>
+                            <td>Dinuc diff</td>
+                                @foreach(var item in Model.DinucList.dinucleotides)
+                                    {<td>@item.DunucFrqDiff</td>}
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</body>
+</html>
+

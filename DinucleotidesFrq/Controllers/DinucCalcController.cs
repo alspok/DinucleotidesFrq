@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using DinucleotidesFrq.Models;
+using DinucleotidesFrq.DinucCalculation;
 
 namespace DinucleotidesFrq.Controllers
 {
@@ -11,6 +12,9 @@ namespace DinucleotidesFrq.Controllers
     {
         public ActionResult Calculation(MultipleModel multipleModel)
         {
+            DinucCalc dinucCalculation = new DinucCalc();
+            dinucCalculation.Calculation(multipleModel);
+
             return View (multipleModel);
         }
     }

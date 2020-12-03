@@ -81,7 +81,7 @@
     <Compile Include="Helpers\RandomSeq.cs" />
     <Compile Include="Helpers\Match.cs" />
     <Compile Include="Controllers\DinucCalcController.cs" />
-    <Compile Include="DinucCalculation\DinucCalculation.cs" />
+    <Compile Include="DinucCalculation\DinucCalc.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

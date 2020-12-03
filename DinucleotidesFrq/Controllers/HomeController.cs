@@ -24,24 +24,3 @@ namespace DinucleotidesFrq.Controllers
         }
     }
 }
-
-/*
-<tbody>
-                        <tr>
-                            <td>1st frame</td>
-                                @foreach(var item in Model.Dinuc.dinucleotides)
-{< td > @item.Dunuc1stFrameFrq </ td >}
-                        </tr>
-                        <tr>
-                            <td>2nd frame</td>
-                                @foreach(var item in Model.Dinuc.dinucleotides)
-{< td > @item.Dunuc2ndFrameFrq </ td >}
-                        </tr>
-                        <tr>
-                            <td>Dinuc diff</td>
-                                @foreach(var item in Model.Dinuc.dinucleotides)
-{< td > @item.DunucFrqDiff </ td >}
-                        </tr>
-                        
-                    </tbody>
-*/

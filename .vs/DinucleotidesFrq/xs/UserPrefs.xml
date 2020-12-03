@@ -15,7 +15,7 @@
       <File FileName="DinucleotidesFrq/Helpers/Match.cs" Line="11" Column="53" NotebookId="1" />
       <File FileName="DinucleotidesFrq/Controllers/DinucCalcController.cs" Line="14" Column="13" NotebookId="1" />
       <File FileName="DinucleotidesFrq/Views/DinucCalc/Calculation.cshtml" Line="48" Column="30" NotebookId="1" />
-      <File FileName="DinucleotidesFrq/DinucCalculation/DinucCalculation.cs" Line="26" Column="17" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/DinucCalculation/DinucCalculation.cs" Line="11" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -31,9 +31,6 @@
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

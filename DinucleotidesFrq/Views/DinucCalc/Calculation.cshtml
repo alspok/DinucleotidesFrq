@@ -36,6 +36,13 @@
                             <td>1st frame</td>
                             @foreach(var item in Model.Dinuc.dinucleotides)
                                     {
+                                        <td>@item.Dinuc1stFrame</td>
+                                    }
+                        </tr>
+                        <tr>
+                            <td>1st frame frq</td>
+                            @foreach(var item in Model.Dinuc.dinucleotides)
+                                    {
                                         <td>@item.Dinuc1stFrameFrq.ToString("0.000")</td>
                                     }
                         </tr>
@@ -43,14 +50,28 @@
                             <td>2nd frame</td>
                             @foreach(var item in Model.Dinuc.dinucleotides)
                                     {
-                                        <td>@item.Dinuc2ndFrameFrq</td>
+                                        <td>@item.Dinuc2ndFrame</td>
+                                    }
+                        </tr>
+                        <tr>
+                            <td>2nd frame frq</td>
+                            @foreach(var item in Model.Dinuc.dinucleotides)
+                                    {
+                                        <td>@item.Dinuc2ndFrameFrq.ToString("0.000")</td>
                                     }
                         </tr>
                         <tr>
                             <td>Dinuc diff</td>
                             @foreach(var item in Model.Dinuc.dinucleotides)
                                     {
-                                        <td>@item.DinucFrqDiff</td>
+                                        <td>@Math.Abs(item.Dinuc1stFrame - item.Dinuc2ndFrame)</td>
+                                    }
+                        </tr>
+                        <tr>
+                            <td>Dinuc frq diff</td>
+                            @foreach(var item in Model.Dinuc.dinucleotides)
+                                    {
+                                        <td>@Math.Abs(item.Dinuc1stFrameFrq - item.Dinuc2ndFrameFrq).ToString("0.000")</td>
                                     }
                         </tr>
                     </tbody>

@@ -12,8 +12,10 @@ namespace DinucleotidesFrq.Controllers
     {
         public ActionResult Calculation(MultipleModel multipleModel)
         {
-            DinucCalc dinucCalculation = new DinucCalc();
-            dinucCalculation.Calculation(multipleModel);
+            //DinucCalc dinucCalculation = new DinucCalc();
+            //dinucCalculation.Calculation(multipleModel);
+            DiCalc diCalc = new DiCalc();
+            diCalc.Calc(multipleModel);
 
             return View (multipleModel);
         }

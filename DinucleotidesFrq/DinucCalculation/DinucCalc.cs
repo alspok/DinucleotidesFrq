@@ -11,11 +11,22 @@ namespace DinucleotidesFrq.DinucCalculation
         public void Calculation(MultipleModel multipleModel)
         {
             string cseq = multipleModel.Seq.Seq + multipleModel.Seq.Seq.Substring(0, 1);
+            int dinucCount = 0;
+
+            if (cseq.Length % 2 == 0)
+            {
+                dinucCount = cseq.Length / 2;
+            }
+            else
+            {
+                dinucCount = (cseq.Length - 1) / 2;
+            }
 
             foreach (var item in multipleModel.Dinuc.dinucleotides)
             {
                 List<int> index = new List<int>();
-                int pos = -1, count = 0;
+                int pos = -1;
+                int count = 0;
 
                 while ((pos = cseq.IndexOf(item.Dinuc, pos + 1, StringComparison.Ordinal)) != -1)
                 {
@@ -33,8 +44,14 @@ namespace DinucleotidesFrq.DinucCalculation
                     {
                         item.Dinuc2ndFrame++;
                     }
+                }
+                item.Dinuc1stFrameFrq = (double)decimal.Divide(item.Dinuc1stFrame, dinucCount);
+                item.Dinuc2ndFrameFrq = (double)decimal.Divide(item.Dinuc2ndFrame, dinucCount);
+                item.DinucFrqDiff = Math.Abs( item.Dinuc1stFrameFrq - item.Dinuc2ndFrameFrq);
 
-                    item.Dinuc1stFrameFrq = (double)decimal.Divide(item.Dinuc1stFrame, cseq.Length - 1);
+                foreach (var item2 in multipleModel.Dinuc.dinucleotides)
+                {
+                    multipleModel.DinucFrqDiffSum += item2.DinucFrqDiff;
                 }
             }
         }

@@ -1,32 +1,35 @@
 ﻿<Properties StartupConfiguration="{4B61CCB3-F598-4F1D-9C1F-6FA9E6F00268}|">
   <MonoDevelop.Ide.ItemProperties.DinucleotidesFrq PreferredExecutionTarget="firefox" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DinucleotidesFrq/DinucCalculation/DinucCalculation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DinucleotidesFrq/Models/Sequence.cs">
     <Files>
-      <File FileName="DinucleotidesFrq/Controllers/HomeController.cs" Line="34" Column="30" />
+      <File FileName="DinucleotidesFrq/Controllers/HomeController.cs" Line="27" Column="1" />
       <File FileName="DinucleotidesFrq/Views/Home/Index.cshtml" Line="1" Column="1" />
       <File FileName="DinucleotidesFrq/Views/_ViewStart.cshtml" Line="4" Column="1" />
       <File FileName="DinucleotidesFrq/Views/Shared/_Layout.cshtml" Line="36" Column="20" />
-      <File FileName="DinucleotidesFrq/Models/MultipleModel.cs" Line="7" Column="64" />
-      <File FileName="DinucleotidesFrq/Models/Sequence.cs" Line="9" Column="51" />
-      <File FileName="DinucleotidesFrq/Models/Dinucleotides.cs" Line="1" Column="1" />
+      <File FileName="DinucleotidesFrq/Models/MultipleModel.cs" Line="8" Column="51" />
+      <File FileName="DinucleotidesFrq/Models/Sequence.cs" Line="10" Column="56" />
+      <File FileName="DinucleotidesFrq/Models/Dinucleotides.cs" Line="38" Column="46" />
       <File FileName="DinucleotidesFrq/Content/Site.css" Line="29" Column="1" NotebookId="1" />
       <File FileName="DinucleotidesFrq/Controllers/SeqInputController.cs" Line="18" Column="1" NotebookId="1" />
-      <File FileName="DinucleotidesFrq/Helpers/RandomSeq.cs" Line="9" Column="10" NotebookId="1" />
-      <File FileName="DinucleotidesFrq/Helpers/Match.cs" Line="11" Column="53" NotebookId="1" />
-      <File FileName="DinucleotidesFrq/Controllers/DinucCalcController.cs" Line="14" Column="13" NotebookId="1" />
-      <File FileName="DinucleotidesFrq/Views/DinucCalc/Calculation.cshtml" Line="48" Column="30" NotebookId="1" />
-      <File FileName="DinucleotidesFrq/DinucCalculation/DinucCalculation.cs" Line="11" Column="1" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/Controllers/DinucCalcController.cs" Line="17" Column="42" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/Views/DinucCalc/Calculation.cshtml" Line="79" Column="17" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/DinucCalculation/DiCalc.cs" Line="27" Column="49" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DinucleotidesFrq" expanded="True">
             <Node name="DinucleotidesFrq" expanded="True">
-              <Node name="DinucCalculation" expanded="True">
-                <Node name="DinucCalculation.cs" selected="True" />
-              </Node>
+              <Node name="Content" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="DinucCalculation" expanded="True" />
               <Node name="Helpers" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Sequence.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="DinucCalc" expanded="True" />
+              </Node>
               <Node name="Global.asax" expanded="True" />
             </Node>
           </Node>
@@ -37,7 +40,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/home/alvydas/Projects/DinucleotidesFrq/DinucleotidesFrq/DinucCalculation/DiCalc.cs" relfile="DinucleotidesFrq/DinucCalculation/DiCalc.cs" line="38" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

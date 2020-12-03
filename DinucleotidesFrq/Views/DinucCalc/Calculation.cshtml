@@ -43,7 +43,7 @@
                             <td>1st frame frq</td>
                             @foreach(var item in Model.Dinuc.dinucleotides)
                                     {
-                                        <td>@item.Dinuc1stFrameFrq.ToString("0.000")</td>
+                                        <td>@item.Dinuc1stFrameFrq.ToString("0.0000")</td>
                                     }
                         </tr>
                         <tr>
@@ -57,7 +57,7 @@
                             <td>2nd frame frq</td>
                             @foreach(var item in Model.Dinuc.dinucleotides)
                                     {
-                                        <td>@item.Dinuc2ndFrameFrq.ToString("0.000")</td>
+                                        <td>@item.Dinuc2ndFrameFrq.ToString("0.0000")</td>
                                     }
                         </tr>
                         <tr>
@@ -71,13 +71,15 @@
                             <td>Dinuc frq diff</td>
                             @foreach(var item in Model.Dinuc.dinucleotides)
                                     {
-                                        <td>@Math.Abs(item.Dinuc1stFrameFrq - item.Dinuc2ndFrameFrq).ToString("0.000")</td>
+                                        <td>@Math.Abs(item.Dinuc1stFrameFrq - item.Dinuc2ndFrameFrq).ToString("0.0000")</td>
                                     }
                         </tr>
                     </tbody>
                 </table>
+                <div class="row">
+                    <div><b>Dinuc Frq Diff Sum: </b>@Model.DinucFrqDiffSum</div>
+                </div>
             </div>
-            
         </div>
     </body>
 </html>

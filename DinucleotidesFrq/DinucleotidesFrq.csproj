@@ -82,6 +82,7 @@
     <Compile Include="Helpers\Match.cs" />
     <Compile Include="Controllers\DinucCalcController.cs" />
     <Compile Include="DinucCalculation\DinucCalc.cs" />
+    <Compile Include="DinucCalculation\DiCalc.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

@@ -4,10 +4,10 @@ namespace DinucleotidesFrq.Models
 {
     public class Sequence
     {
-        public string Seq { get; set; } = "aaacagatg";
+        public string Seq { get; set; } = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
         public int SeqLength { get; set; } = 0;
         public bool SeqMatch { get; set; } = true;
-        public string TestSeq { get; set; } = "aaacagat";
+        public string TestSeq { get; set; } = "aaacagatcacccgctgagcgggttatctgtt";
         public string RandSeq { get; set; } = "tacttcgtgtgttgactctacggcgacaagcttagaggtagtttctctgcggtaaacacttcttggatattcgggcggtgggctagtgtcgccacaaaat";
     }
 }

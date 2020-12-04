@@ -43,8 +43,18 @@ namespace DinucleotidesFrq.DinucCalculation
                 Console.WriteLine(e.Message);
             }
 
-           int result = dinuc1st.Count(di => di.Contains("aa"));
-            int result1 = dinuc2nd.Count(di => di.Contains("aa"));
+            foreach (var item in multipleModel.Dinuc.dinucleotides)
+            {
+                item.Dinuc1stFrame = dinuc1st.Count(di => di.Contains(item.Dinuc));
+                item.Dinuc2ndFrame = dinuc2nd.Count(di => di.Contains(item.Dinuc));
+
+                item.Dinuc1stFrameFrq = (double)decimal.Divide(item.Dinuc1stFrame, dinuc1st.Count);
+                item.Dinuc2ndFrameFrq = (double)decimal.Divide(item.Dinuc2ndFrame, dinuc2nd.Count);
+
+                item.DinucFrqDiff = Math.Abs(item.Dinuc1stFrameFrq - item.Dinuc2ndFrameFrq);
+
+                multipleModel.DinucFrqDiffSum += item.DinucFrqDiff;
+            }
         }
     }
 }

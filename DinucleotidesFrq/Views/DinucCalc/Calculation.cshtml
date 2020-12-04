@@ -16,7 +16,7 @@
                 <br>
             </div>
             <div class="row">
-                <p><b>Sequence: </b>@Model.Seq.Seq</p>
+                <p><b>Sequence: </b>@Model.Seq.Seq</p>...
             </div>
             <div class="row">
                 <p><b>Sequence length: </b>@Model.Seq.Seq.Length</p>
@@ -76,11 +76,14 @@
                         </tr>
                     </tbody>
                 </table>
-                <div class="row">
-                    <div><b>Dinuc Frq Diff Sum: </b>@Model.DinucFrqDiffSum</div>
-                </div>
             </div>
         </div>
     </body>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div><b>Dinuc Frq Diff Sum: </b>@Model.DinucFrqDiffSum.ToString("0.0000")</div>
+        </div>
+    </div>
 </html>
 

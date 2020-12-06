@@ -23,6 +23,7 @@
             }
         }
     </div>
+    
         @using(Html.BeginForm("Calculation" , "DinucCalc", FormMethod.Post))
         {
             <div class="row justify-content-center">
@@ -34,37 +35,57 @@
             </div>
         }
 </div>
-
-<div class="container-fluid">
+<br>
+<div class="container-fluid" style="overflow-y: scroll">
     <div class=" row justify-content-center">
         <br>
         <h2>Choose sequence</h2>
+        <br>
     </div>
-        @using (Html.BeginForm("SeqIn", "SeqInput", FormMethod.Post))
-            {
-            <civ class="row justify-content-left">
-                <div class="col-md-2">
-                    <a> Test seq: </a>
-                </div>
-                <div class="col-md-10">
-                    @Html.DisplayFor(t => t.Seq.TestSeq)
-                    <button name="choose" value="add-test">Add</button>
-                </div>
-            </civ>
-            <div class="row">
-                <div class="col-md-2">
-                    <a>Random seq(100 bp): </a>
-                </div>
-                <div class="col-md-10">
-                    @Html.DisplayFor(r => r.Seq.RandSeq)
-                    <button name="choose" value="make-random">Make seq</button>
-                    <button name="choose" value="add-random">Add</button>
-                </div>
-            </div>
-            <div class="row justify-content-left">
-                <div class="col-md-2">
-                <a>Select from GB: </a>
-                </div>
-            </div>
-            }
+    
+    <div>
+    @using (Html.BeginForm("SeqIn", "SeqInput", FormMethod.Post))
+    {
+    <div class="row">
+        <div class="col-md-3 text-right">
+            <b> Test seq: </b>
+        </div>
+        <div class="col-md-7">
+            @Html.DisplayFor(t => t.Seq.TestSeq)
+        </div>
+        <div class="col-md-2">
+            <button name="choose" value="add-test">Add</button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-3 text-right">
+            <b>Random seq(100 bp): </b>
+        </div>
+        <div class="col-md-7">
+            @Html.DisplayFor(r => r.Seq.RandSeq)
+        </div>
+        <div class="col-md-2">
+            <button name="choose" value="make-random">Make seq</button>
+            <button name="choose" value="add-random">Add</button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-3 text-right">
+            <b>Select form list: </b>        
+        </div>
+        <div class="col-md-9">
+            @Html.DropDownListFor(s => s.SeqNames.Names, "Choose an option")
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-3 text-right">
+            <b>Select from GB: </b>
+        </div>
+        <div class="col-md-7"></div>
+        <div class="col-md-2"></div>
+    </div>
+    }
 </div>

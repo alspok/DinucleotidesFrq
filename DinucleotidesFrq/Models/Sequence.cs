@@ -4,7 +4,7 @@ namespace DinucleotidesFrq.Models
 {
     public class Sequence
     {
-        public string Seq { get; set; } = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+        public string Seq { get; set; } = "aggctagagacccattgtgtgacagtgatggcgagtaagc";
         public int SeqLength { get; set; } = 0;
         public bool SeqMatch { get; set; } = true;
         public string TestSeq { get; set; } = "aaacagatcacccgctgagcgggttatctgtt";

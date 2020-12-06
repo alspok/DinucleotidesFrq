@@ -20,12 +20,16 @@
 }
 
 table{
-    width: 70%;
+    width: 90%;
     background-color: lightgrey;
 }
 
 tr{
     height: 60px
      border: 1px solid black;
+}
+
+button{
+    font-size : 14px;
 }
 

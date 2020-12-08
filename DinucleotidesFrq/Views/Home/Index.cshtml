@@ -27,7 +27,8 @@
         @using(Html.BeginForm("Calculation" , "DinucCalc", FormMethod.Post))
         {
             <div class="row justify-content-center">
-                @Html.TextAreaFor(s => s.Seq.Seq, new{@class="text-area"})
+<!--                @Html.TextAreaFor(s => s.Seq.Seq, new{@class="text-area"})-->
+                    @Html.TextAreaFor(s => s.Seq.Seq, new{@class="text-area"})
             </div>
             <br>
             <div class="row justify-content-center">
@@ -80,7 +81,7 @@
                 {
                     new SelectListItem{Text = "E.coli", Value = "1"},
                     new SelectListItem{Text = "L.lactis", Value = "2"} 
-                }, "-- Please select seq --", new{@class="select-style"})
+                }, "--  Select seq  --", new{@class="select-style"})
         </div>
     </div>
     <br>

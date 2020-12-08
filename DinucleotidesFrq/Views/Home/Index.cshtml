@@ -7,7 +7,7 @@
 
 <div class="container-fluid">
     <div class="row  justify-content-center">
-        <h2>Sequence input</h2>
+        <h2>Input sequece</h2>
     </div>
     <div class="row  justify-content-center">
         @{
@@ -31,7 +31,7 @@
             </div>
             <br>
             <div class="row justify-content-center">
-                <button value="calculate">Calculate</button>
+                <button value="calculate" style="border: 0.5px solid black; border-radius: 5px;  background-color: lightgrey">Calculate</button>
             </div>
         }
 </div>
@@ -54,7 +54,7 @@
             @Html.DisplayFor(t => t.Seq.TestSeq)
         </div>
         <div class="col-md-2">
-            <button name="choose" value="add-test">Add</button>
+            <button name="choose" value="add-test" style="border: 0.5px solid black; border-radius: 5px;  background-color: lightgrey">Add</button>
         </div>
     </div>
     <br>
@@ -66,17 +66,21 @@
             @Html.DisplayFor(r => r.Seq.RandSeq)
         </div>
         <div class="col-md-2">
-            <button name="choose" value="make-random">Make seq</button>
-            <button name="choose" value="add-random">Add</button>
+            <button name="choose" value="make-random" style="border: 0.5px solid black; border-radius: 5px;  background-color: lightgrey">Make seq</button>
+            <button name="choose" value="add-random" style="border: 0.5px solid black; border-radius: 5px;  background-color: lightgrey">Add</button>
         </div>
     </div>
     <br>
     <div class="row">
         <div class="col-md-3 text-right">
-            <b>Select form list: </b>        
+            <b>Select from list: </b>        
         </div>
         <div class="col-md-9">
-            @Html.DropDownListFor(s => s.SeqNames.Names, "Choose an option")
+            @Html.DropDownList("SeqNames", new List<SelectListItem>
+                {
+                    new SelectListItem{Text = "E.coli", Value = "1"},
+                    new SelectListItem{Text = "L.lactis", Value = "2"} 
+                }, "-- Please select seq --", new{@class="select-style"})
         </div>
     </div>
     <br>

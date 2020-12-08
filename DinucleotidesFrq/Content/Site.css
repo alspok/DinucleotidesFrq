@@ -16,6 +16,7 @@
 .text-area{
     width: 60%;
     height: 150px;
+    border-radius: 5px;
     background-color:   lightgrey;
 }
 
@@ -29,7 +30,14 @@ tr{
      border: 1px solid black;
 }
 
-button{
+.button-st{
     font-size : 14px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    background-color: lightgrey;
 }
 
+.select-style{
+    border-radius: 5px;
+    border: 0.5px solid black;
+}

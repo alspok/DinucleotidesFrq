@@ -19,7 +19,7 @@ namespace DinucleotidesFrq.Controllers
                     break;
                 case "make-random":
                     RandomSeq randomSeq = new RandomSeq();
-                    multipleModel.Seq.RandSeq = randomSeq.RandSeq();
+                    multipleModel.Seq.Seq = randomSeq.RandSeq();
                     //multipleModel.Seq.Seq = multipleModel.Seq.RandSeq;
                     break;
                 case "add-random":

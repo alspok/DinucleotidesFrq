@@ -11,8 +11,6 @@
     </div>
     <div class="row  justify-content-center">
         @{
-            Match match = new Match();
-            match.MatchSeq(Model);
             if(Model.Seq.SeqMatch)
             {
                 <p style="color: black">Enter A, C, G, T or a, c, g, t only</p>
@@ -74,20 +72,19 @@
     <br>
     <div class="row">
         <div class="col-md-3 text-right">
-            <b>Select from list: </b>        
+            <b>Selec seq  from list: </b>        
         </div>
         <div class="col-md-9">
-            @Html.DropDownList("SeqNames", new List<SelectListItem>
-                {
-                    new SelectListItem{Text = "E.coli", Value = "1"},
-                    new SelectListItem{Text = "L.lactis", Value = "2"} 
-                }, "--  Select seq  --", new{@class="select-style"})
+            @Html.DropDownListFor(m => m.SeqList.SeqList,
+                new SelectList(Model.SeqList.SeqList),
+                "-- Select seq --",
+                new {@class="select-style"})
         </div>
     </div>
     <br>
     <div class="row">
         <div class="col-md-3 text-right">
-            <b>Select from GB: </b>
+            <b>Select seq from GB: </b>
         </div>
         <div class="col-md-7"></div>
         <div class="col-md-2"></div>

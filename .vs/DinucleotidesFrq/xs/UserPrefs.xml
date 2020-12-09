@@ -1,17 +1,19 @@
 ﻿<Properties StartupConfiguration="{4B61CCB3-F598-4F1D-9C1F-6FA9E6F00268}|">
   <MonoDevelop.Ide.ItemProperties.DinucleotidesFrq PreferredExecutionTarget="chromium-browser" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DinucleotidesFrq/Views/Home/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DinucleotidesFrq/Models/SequenceList.cs">
     <Files>
       <File FileName="DinucleotidesFrq/Controllers/HomeController.cs" Line="27" Column="1" />
       <File FileName="DinucleotidesFrq/Views/Shared/_Layout.cshtml" Line="33" Column="23" />
-      <File FileName="DinucleotidesFrq/Views/Home/Index.cshtml" Line="84" Column="36" />
-      <File FileName="DinucleotidesFrq/Models/MultipleModel.cs" Line="9" Column="1" />
-      <File FileName="DinucleotidesFrq/Models/Sequence.cs" Line="7" Column="43" />
+      <File FileName="DinucleotidesFrq/Views/Home/Index.cshtml" Line="88" Column="26" />
+      <File FileName="DinucleotidesFrq/Models/MultipleModel.cs" Line="6" Column="1" />
+      <File FileName="DinucleotidesFrq/Models/Sequence.cs" Line="7" Column="87" />
+      <File FileName="DinucleotidesFrq/Models/SequenceList.cs" Line="1" Column="1" />
       <File FileName="DinucleotidesFrq/Content/Site.css" Line="24" Column="16" NotebookId="1" />
-      <File FileName="DinucleotidesFrq/Controllers/SeqInputController.cs" Line="26" Column="71" NotebookId="1" />
-      <File FileName="DinucleotidesFrq/Controllers/DinucCalcController.cs" Line="17" Column="42" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/Controllers/SeqInputController.cs" Line="7" Column="32" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/Controllers/DinucCalcController.cs" Line="35" Column="6" NotebookId="1" />
       <File FileName="DinucleotidesFrq/Views/DinucCalc/Calculation.cshtml" Line="34" Column="24" NotebookId="1" />
       <File FileName="DinucleotidesFrq/DinucCalculation/DiCalc.cs" Line="5" Column="1" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/Helpers/Match.cs" Line="16" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,12 +24,12 @@
               <Node name="Controllers" expanded="True" />
               <Node name="DinucCalculation" expanded="True" />
               <Node name="Helpers" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="SequenceList.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
                 <Node name="DinucCalc" expanded="True" />
-                <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
+                <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
               <Node name="Global.asax" expanded="True" />

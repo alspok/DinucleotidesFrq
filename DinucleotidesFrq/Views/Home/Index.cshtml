@@ -75,8 +75,8 @@
             <b>Selec seq  from list: </b>        
         </div>
         <div class="col-md-9">
-            @Html.DropDownListFor(m => m.SeqList.SeqList,
-                new SelectList(Model.SeqList.SeqList),
+            @Html.DropDownListFor(m => m.Names.SelectName,
+                new SelectList(Model.Names.seqNames),
                 "-- Select seq --",
                 new {@class="select-style"})
         </div>

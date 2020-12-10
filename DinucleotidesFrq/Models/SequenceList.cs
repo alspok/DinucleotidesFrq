@@ -1,15 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Web.Mvc;
 
 namespace DinucleotidesFrq.Models
 {
-    public class SequenceList
+    public class SeqNames
     {
-        public List<string> SeqList  = new List<string>
+        public string SelectName { get; set; }
+        public List<string> seqNames = new List<string>
         {
-            "Escherichia coli",
-            "Lactococcus lactis",
-            "Something some"
+            "E.coli",
+            "L.lactis",
+            "S.some"
         };
+    }
+
+    public class SequenceName
+    {
+        public List<SelectListItem> SequenceNames { get; set; }
     }
 }

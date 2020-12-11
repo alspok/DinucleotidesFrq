@@ -20,11 +20,14 @@ namespace DinucleotidesFrq.Controllers
                 case "make-random":
                     RandomSeq randomSeq = new RandomSeq();
                     multipleModel.Seq.Seq = randomSeq.RandSeq();
-                    //multipleModel.Seq.Seq = multipleModel.Seq.RandSeq;
                     break;
                 case "add-random":
                     multipleModel.Seq.Seq = multipleModel.Seq.RandSeq;
                     break;
+                case "add-from-list":
+                    SequenceFile sequenceFile = new SequenceFile();
+                    sequenceFile.SeqFile(multipleModel.Names.SelectName);
+                    break; 
             }
 
             return View ("~/Views/Home/Index.cshtml", multipleModel);

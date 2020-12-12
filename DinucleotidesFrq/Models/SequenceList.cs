@@ -9,7 +9,7 @@ namespace DinucleotidesFrq.Models
         public string SelectName { get; set; }
         public List<string> seqNames = new List<string>
         {
-            "E.coli",
+            "Escherichia.coli.6000",
             "L.lactis",
             "S.some"
         };

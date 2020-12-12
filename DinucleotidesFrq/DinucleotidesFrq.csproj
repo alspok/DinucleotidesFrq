@@ -67,6 +67,7 @@
     <Folder Include="Helpers\" />
     <Folder Include="Views\DinucCalc\" />
     <Folder Include="DinucCalculation\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -97,6 +98,9 @@
     <Content Include="packages.config" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\DinucCalc\Calculation.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Escherichia.coli.6000.fasta" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

@@ -86,6 +86,8 @@
     <Compile Include="DinucCalculation\DiCalc.cs" />
     <Compile Include="Models\SequenceList.cs" />
     <Compile Include="Helpers\SequenceFile.cs" />
+    <Compile Include="Controllers\MultiModel.cs" />
+    <Compile Include="Models\SequenceModels.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

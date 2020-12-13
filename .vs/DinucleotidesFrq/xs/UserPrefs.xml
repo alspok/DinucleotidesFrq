@@ -1,20 +1,22 @@
 ﻿<Properties StartupConfiguration="{4B61CCB3-F598-4F1D-9C1F-6FA9E6F00268}|">
   <MonoDevelop.Ide.ItemProperties.DinucleotidesFrq PreferredExecutionTarget="chromium-browser" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DinucleotidesFrq/Helpers/SequenceFile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DinucleotidesFrq/Models/SequenceModels.cs">
     <Files>
-      <File FileName="DinucleotidesFrq/Controllers/HomeController.cs" Line="27" Column="1" />
+      <File FileName="DinucleotidesFrq/Controllers/HomeController.cs" Line="1" Column="14" />
       <File FileName="DinucleotidesFrq/Views/Shared/_Layout.cshtml" Line="20" Column="5" />
-      <File FileName="DinucleotidesFrq/Views/Home/Index.cshtml" Line="82" Column="1" />
+      <File FileName="DinucleotidesFrq/Views/Home/Index.cshtml" Line="5" Column="1" />
       <File FileName="DinucleotidesFrq/Models/MultipleModel.cs" Line="9" Column="19" />
-      <File FileName="DinucleotidesFrq/Models/Sequence.cs" Line="7" Column="87" />
-      <File FileName="DinucleotidesFrq/Controllers/SeqInputController.cs" Line="29" Column="74" NotebookId="1" />
-      <File FileName="DinucleotidesFrq/Helpers/SequenceFile.cs" Line="10" Column="1" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/Models/Sequence.cs" Line="13" Column="1" />
+      <File FileName="DinucleotidesFrq/Controllers/SeqInputController.cs" Line="33" Column="1" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/Helpers/SequenceFile.cs" Line="43" Column="1" NotebookId="1" />
       <File FileName="DinucleotidesFrq/Controllers/DinucCalcController.cs" Line="26" Column="17" NotebookId="1" />
-      <File FileName="DinucleotidesFrq/Views/DinucCalc/Calculation.cshtml" Line="34" Column="24" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/Views/DinucCalc/Calculation.cshtml" Line="3" Column="1" NotebookId="1" />
       <File FileName="DinucleotidesFrq/DinucCalculation/DiCalc.cs" Line="5" Column="1" NotebookId="1" />
       <File FileName="DinucleotidesFrq/Helpers/Match.cs" Line="16" Column="1" NotebookId="1" />
       <File FileName="DinucleotidesFrq/Models/Dinucleotides.cs" Line="30" Column="47" NotebookId="1" />
-      <File FileName="DinucleotidesFrq/Models/SequenceList.cs" Line="19" Column="6" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/Models/SequenceList.cs" Line="12" Column="35" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/Controllers/MultiModel.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/Models/SequenceModels.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,11 +25,12 @@
             <Node name="DinucleotidesFrq" expanded="True">
               <Node name="Content" expanded="True" />
               <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
               <Node name="DinucCalculation" expanded="True" />
-              <Node name="Helpers" expanded="True">
-                <Node name="SequenceFile.cs" selected="True" />
+              <Node name="Helpers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="SequenceModels.cs" selected="True" />
               </Node>
-              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="DinucCalc" expanded="True" />
                 <Node name="Home" expanded="True" />
@@ -44,7 +47,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/home/alvydas/Projects/DinucleotidesFrq/DinucleotidesFrq/Helpers/SequenceFile.cs" relfile="DinucleotidesFrq/Helpers/SequenceFile.cs" line="10" column="68" />
+      <Breakpoint file="/home/alvydas/Projects/DinucleotidesFrq/DinucleotidesFrq/Controllers/DinucCalcController.cs" relfile="DinucleotidesFrq/Controllers/DinucCalcController.cs" line="24" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

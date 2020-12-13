@@ -9,5 +9,6 @@ namespace DinucleotidesFrq.Models
         public bool SeqMatch { get; set; } = true;
         public string TestSeq { get; set; } = "aaacagatcacccgctgagcgggttatctgtt";
         public string RandSeq { get; set; } = "tacttcgtgtgttgactctacggcgacaagcttagaggtagtttctctgcggtaaacacttcttggatattcgggcggtgggctagtgtcgccacaaaat";
+        public string OutputSeq { get; set; } = "...";
     }
 }

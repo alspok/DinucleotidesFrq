@@ -25,8 +25,7 @@
         @using(Html.BeginForm("Calculation" , "DinucCalc", FormMethod.Post))
         {
             <div class="row justify-content-center">
-<!--                @Html.TextAreaFor(s => s.Seq.Seq, new{@class="text-area"})-->
-                    @Html.TextAreaFor(s => s.Seq.Seq, new{@class="text-area"})
+                @Html.TextAreaFor(s => s.Seq.OutputSeq, new{@class="text-area"})
             </div>
             <br>
             <div class="row justify-content-center">

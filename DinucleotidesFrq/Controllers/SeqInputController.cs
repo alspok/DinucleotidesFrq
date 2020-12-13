@@ -26,7 +26,7 @@ namespace DinucleotidesFrq.Controllers
                     break;
                 case "add-from-list":
                     SequenceFile sequenceFile = new SequenceFile();
-                    sequenceFile.SeqFile(multipleModel.Names.SelectName);
+                    sequenceFile.SeqFile(multipleModel);
                     break; 
             }
 

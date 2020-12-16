@@ -6,10 +6,10 @@ namespace DinucleotidesFrq.Helpers
 {
     public class Match
     {
-        public void  MatchSeq(MultipleModel multipleModel)
+        public void  MatchSeq(SequenceModels sequenceModels)
         {
-            if (!Regex.IsMatch(multipleModel.Seq.Seq, @"^[ACGTacgt]*$"))
-                multipleModel.Seq.SeqMatch = false;
+            if (!Regex.IsMatch(sequenceModels.Seq.Seq, @"^[ACGTacgt]*$"))
+                sequenceModels.SeqMatch = false;
         }
     }
 }

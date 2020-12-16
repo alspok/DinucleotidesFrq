@@ -6,16 +6,14 @@ namespace DinucleotidesFrq.Helpers
 {
     public class SequenceFile
     {
-        public MultipleModel SeqFile(MultipleModel multipleModel)
+        public SequenceModels SeqFile(SequenceModels sequenceModels)
         {
             string filePath = "Data/";
-            string fileExt = ".fasta";
-            string seqName = multipleModel.Names.SelectName;
             string seqLine = string.Empty;
 
-            multipleModel.Seq.Seq = string.Empty;
+            sequenceModels.Seq.Seq = string.Empty;
 
-            using (StreamReader stream = new StreamReader(filePath+seqName+fileExt))
+            using (StreamReader stream = new StreamReader(filePath))
             {
                 while ((seqLine = stream.ReadLine()) != null)
                 {
@@ -24,23 +22,23 @@ namespace DinucleotidesFrq.Helpers
                         continue;
                     }
 
-                    multipleModel.Seq.Seq += seqLine.ToLower();
+                    sequenceModels.Seq.Seq += seqLine.ToLower();
                 }
             }
 
-            multipleModel.Seq.SeqLength = multipleModel.Seq.Seq.Length;
+            sequenceModels.Seq.SeqLength = sequenceModels.Seq.Seq.Length;
 
-            if (multipleModel.Seq.Seq.Length >= 400)
+            if (sequenceModels.Seq.Seq.Length >= 400)
             {
-                multipleModel.Seq.OutputSeq = multipleModel.Seq.Seq.Substring(0, 200) + "..." +
-                    multipleModel.Seq.Seq.Substring(multipleModel.Seq.Seq.Length - 200);
+                sequenceModels.OutputSeq.OutSeq = sequenceModels.Seq.Seq.Substring(0, 200) + "..." +
+                    sequenceModels.Seq.Seq.Substring(sequenceModels.Seq.Seq.Length - 200);
             }
             else
             {
-                multipleModel.Seq.OutputSeq = multipleModel.Seq.Seq;
+                sequenceModels.OutputSeq.OutSeq = sequenceModels.Seq.Seq;
             }
 
-            return multipleModel;
+            return sequenceModels;
         }
     }
 }

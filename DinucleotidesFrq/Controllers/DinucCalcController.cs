@@ -11,21 +11,21 @@ namespace DinucleotidesFrq.Controllers
 {
     public class DinucCalcController : Controller
     {
-        public ActionResult Calculation(MultipleModel multipleModel)
+        public ActionResult Calculation(SequenceModels sequenceModels)
         {
             Match match = new Match();
-            match.MatchSeq(multipleModel);
-            if (multipleModel.Seq.SeqMatch)
+            match.MatchSeq(sequenceModels);
+            if (sequenceModels.SeqMatch)
             {
                 DiCalc diCalc = new DiCalc();
-                diCalc.Calc(multipleModel);
-                multipleModel.Seq.SeqMatch = true;
+                diCalc.Calc(sequenceModels);
+                sequenceModels.SeqMatch = true;
 
-                return View(multipleModel);
+                return View(sequenceModels);
             }
             else
             {
-                return View("~/Views/Home/Index.cshtml", multipleModel);
+                return View("~/Views/Home/Index.cshtml", sequenceModels);
             }
 
             //DinucCalc dinucCalculation = new DinucCalc();

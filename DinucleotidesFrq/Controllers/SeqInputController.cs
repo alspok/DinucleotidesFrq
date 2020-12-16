@@ -10,27 +10,27 @@ namespace DinucleotidesFrq.Controllers
 {
     public class SeqInputController : Controller
     {
-        public ActionResult SeqIn(MultipleModel multipleModel, string  choose)
+        public ActionResult SeqIn(SequenceModels sequenceModels, string  choose)
         {
             switch(choose)
             {
                 case "add-test":
-                    multipleModel.Seq.Seq = multipleModel.Seq.TestSeq;
+                    sequenceModels.TestSeq.TSeq = sequenceModels.TestSeq.TSeq;
                     break;
                 case "make-random":
                     RandomSeq randomSeq = new RandomSeq();
-                    multipleModel.Seq.Seq = randomSeq.RandSeq();
+                    sequenceModels.Seq.Seq = randomSeq.RandSeq();
                     break;
                 case "add-random":
-                    multipleModel.Seq.Seq = multipleModel.Seq.RandSeq;
+                    sequenceModels.Seq.Seq = sequenceModels.RandomSeq.Seq;
                     break;
                 case "add-from-list":
                     SequenceFile sequenceFile = new SequenceFile();
-                    sequenceFile.SeqFile(multipleModel);
+                    sequenceFile.SeqFile(sequenceModels);
                     break; 
             }
 
-            return View ("~/Views/Home/Index.cshtml", multipleModel);
+            return View ("~/Views/Home/Index.cshtml", sequenceModels);
         }
     }
 }

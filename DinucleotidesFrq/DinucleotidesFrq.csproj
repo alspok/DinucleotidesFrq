@@ -75,16 +75,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Models\Sequence.cs" />
-    <Compile Include="Models\Dinucleotides.cs" />
-    <Compile Include="Models\MultipleModel.cs" />
     <Compile Include="Controllers\SeqInputController.cs" />
     <Compile Include="Helpers\RandomSeq.cs" />
     <Compile Include="Helpers\Match.cs" />
     <Compile Include="Controllers\DinucCalcController.cs" />
-    <Compile Include="DinucCalculation\DinucCalc.cs" />
     <Compile Include="DinucCalculation\DiCalc.cs" />
-    <Compile Include="Models\SequenceList.cs" />
     <Compile Include="Helpers\SequenceFile.cs" />
     <Compile Include="Controllers\MultiModel.cs" />
     <Compile Include="Models\SequenceModels.cs" />
@@ -100,6 +95,7 @@
     <Content Include="packages.config" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\DinucCalc\Calculation.cshtml" />
+    <Content Include="Views\Home\SeqArea.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\Escherichia.coli.6000.fasta" />

@@ -9,14 +9,14 @@ namespace DinucleotidesFrq.DinucCalculation
     {
         public string Cseq { get; set; }
 
-        public void Calc(MultipleModel multipleModel)
+        public void Calc(SequenceModels sequenceModels)
         {
             List<string> dinuc1st = new List<string>();
             List<string> dinuc2nd = new List<string>();
             char[] nucArray;
-            int seqLength = multipleModel.Seq.Seq.Length;
+            int seqLength = sequenceModels.Seq.SeqLength;
 
-            Cseq = multipleModel.Seq.Seq + multipleModel.Seq.Seq.Substring(0, 2);
+            Cseq = sequenceModels.Seq.Seq + sequenceModels.Seq.Seq.Substring(0, 2);
             nucArray = Cseq.ToCharArray();
 
             try
@@ -43,7 +43,7 @@ namespace DinucleotidesFrq.DinucCalculation
                 Console.WriteLine(e.Message);
             }
 
-            foreach (var item in multipleModel.Dinuc.dinucleotides)
+            foreach (var item in sequenceModels.Dinuc.Dinucs)
             {
                 item.Dinuc1stFrame = dinuc1st.Count(di => di.Contains(item.Dinuc));
                 item.Dinuc2ndFrame = dinuc2nd.Count(di => di.Contains(item.Dinuc));
@@ -53,7 +53,7 @@ namespace DinucleotidesFrq.DinucCalculation
 
                 item.DinucFrqDiff = Math.Abs(item.Dinuc1stFrameFrq - item.Dinuc2ndFrameFrq);
 
-                multipleModel.DinucFrqDiffSum += item.DinucFrqDiff;
+                sequenceModels.Dinuc.DinucDiffSum += item.DinucFrqDiff;
             }
         }
     }

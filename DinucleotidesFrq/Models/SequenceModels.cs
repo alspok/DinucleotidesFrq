@@ -51,20 +51,20 @@ namespace DinucleotidesFrq.Models
 
     public class FileSequence
     {
-        //public class FileSeq
-        //{
-        //    public string Seq { get; set; }
-        //    public string SeqName { get; set; }
-        //    public string SeqFile { get; set; }
-        //    public int SeqLength { get; set; }
-        //}
-
-        public string SelectSeqName { get; set; }
-
-        public List<string> FSeq { get; set; } = new List<string>
+        public class FileSq
         {
-            "E.coli",
-            "L.lactis"
+            public string Seq { get; set; }
+            public string SeqName { get; set; }
+            public string SeqFile { get; set; }
+            public int SeqLength { get; set; }
+        }
+
+        public string SelectedSeq { get; set; }
+
+        public List<FileSq> FSeq { get; set; } = new List<FileSq>
+        {
+            new FileSq { Seq = "aaaaaaa", SeqName = "E.coli" },
+            new FileSq { Seq = "ggggggg", SeqName = "L.lactis" }
         };
     }
 

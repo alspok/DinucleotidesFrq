@@ -10,9 +10,9 @@ namespace DinucleotidesFrq.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
-        {
-            SequenceModels sequenceModels = new SequenceModels();
+        //public ActionResult Index()
+        //{
+            //SequenceModels sequenceModels = new SequenceModels();
 
             //var mvcName = typeof(Controller).Assembly.GetName();
             //var isMono = Type.GetType("Mono.Runtime") != null;
@@ -20,7 +20,7 @@ namespace DinucleotidesFrq.Controllers
             //ViewData["Version"] = mvcName.Version.Major + "." + mvcName.Version.Minor;
             //ViewData["Runtime"] = isMono ? "Mono" : ".NET";
 
-            return View(sequenceModels);
-        }
+            //return View(testModel);
+        //}
     }
 }

@@ -68,6 +68,7 @@
     <Folder Include="Views\DinucCalc\" />
     <Folder Include="DinucCalculation\" />
     <Folder Include="Data\" />
+    <Folder Include="Views\Test\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -81,8 +82,9 @@
     <Compile Include="Controllers\DinucCalcController.cs" />
     <Compile Include="DinucCalculation\DiCalc.cs" />
     <Compile Include="Helpers\SequenceFile.cs" />
-    <Compile Include="Controllers\MultiModel.cs" />
     <Compile Include="Models\SequenceModels.cs" />
+    <Compile Include="Models\TestModel.cs" />
+    <Compile Include="Controllers\TestController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -96,6 +98,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Views\DinucCalc\Calculation.cshtml" />
     <Content Include="Views\Home\SeqArea.cshtml" />
+    <Content Include="Views\Test\Test.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\Escherichia.coli.6000.fasta" />

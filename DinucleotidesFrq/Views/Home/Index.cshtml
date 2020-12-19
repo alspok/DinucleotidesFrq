@@ -3,7 +3,7 @@
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
-}
+    }
 
 <div class="container-fluid">
     <div class="row  justify-content-center">
@@ -74,8 +74,8 @@
             <b>Selec seq  from list: </b>        
         </div>
         <div class="col-md-9">
-            @Html.DropDownListFor(m => m.FileSeq.SelectSeqName,
-                new SelectList(Model.FileSeq.FSeq),
+            @Html.DropDownListFor(m => m.FileSeq.SelectedSeq,
+                new SelectList(Model.FileSeq.FSeq, "SeqName"),
                 "-- Select seq --",
                 new {@class="select-style"})
                 <button name="choose" value="add-from-list" style="border: 0.5px solid black; border-radius: 5px;  background-color: lightgrey">Add</button>

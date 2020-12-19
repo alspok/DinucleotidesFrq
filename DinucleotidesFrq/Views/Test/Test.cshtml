@@ -1,0 +1,25 @@
+﻿@model DinucleotidesFrq.Models.TestModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+</head>
+<body>
+        Test View
+        <br>
+        @Model.Sequences[0].Seq
+        <br>
+        @Model.Sequences[0].SeqLength
+        <br>
+        @Model.FileSequences[0].FileName
+        <br>
+        @Model.FileSequences[0].FileType
+        <br>
+        @Html.DropDownListFor(m => m.SelectedFile, new SelectList(Model.FileSequences))
+</body>
+</html>
+

@@ -14,9 +14,9 @@ namespace DinucleotidesFrq.Controllers
         {
             switch(choose)
             {
-                case "add-test":
-                    sequenceModels.TestSeq.TSeq = sequenceModels.TestSeq.TSeq;
-                    break;
+                //case "add-test":
+                    //sequenceModels.TestSeq.TSeq = sequenceModels.TestSeq.TSeq;
+                    //break;
                 case "make-random":
                     RandomSeq randomSeq = new RandomSeq();
                     sequenceModels.Seq.Seq = randomSeq.RandSeq();
@@ -24,10 +24,10 @@ namespace DinucleotidesFrq.Controllers
                 case "add-random":
                     sequenceModels.Seq.Seq = sequenceModels.RandomSeq.Seq;
                     break;
-                case "add-from-list":
-                    SequenceFile sequenceFile = new SequenceFile();
-                    sequenceFile.SeqFile(sequenceModels);
-                    break; 
+                //case "add-from-list":
+                    //SequenceFile sequenceFile = new SequenceFile();
+                    //sequenceFile.SeqFile(sequenceModels);
+                    //break; 
             }
 
             return View ("~/Views/Home/Index.cshtml", sequenceModels);

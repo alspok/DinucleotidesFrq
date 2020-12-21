@@ -1,26 +1,47 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using System.Web.Mvc;
-using System.Web.Mvc.Ajax;
 using DinucleotidesFrq.Models;
 
 namespace DinucleotidesFrq.Controllers
 {
     public class HomeController : Controller
     {
-        //public ActionResult Index()
-        //{
-            //SequenceModels sequenceModels = new SequenceModels();
+        public ActionResult Index()
+        {
+            Sequence sequence = new Sequence
+            {
+                Seq = "agacagacagacagatagatgtc",
+                SeqName = "SomeSeq"
+            };
 
-            //var mvcName = typeof(Controller).Assembly.GetName();
-            //var isMono = Type.GetType("Mono.Runtime") != null;
+            SeqMatch seqMatch = new SeqMatch
+            {
+                Match = true
+            };
 
-            //ViewData["Version"] = mvcName.Version.Major + "." + mvcName.Version.Minor;
-            //ViewData["Runtime"] = isMono ? "Mono" : ".NET";
+            List<TestSequence> testSequence = new List<TestSequence>
+            {
+                new TestSequence { Seq = "aaacagatcacccgctgagcgggttatctgtt", SeqName = "All dinucs" },
+                new TestSequence { Seq = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",  SeqName = "Mono dinucs"},
+                new TestSequence { Seq = "agcgggctagtgcgtgagcgggctagtgcgtg", SeqName = "Odd seq length" },
+                new TestSequence { Seq = "agcgggctagtgcgtgcagcgggctagtgcgtg", SeqName = "Even seq length" }
+            };
 
-            //return View(testModel);
-        //}
+            List<FileSequence> fileSequence = new List<FileSequence>
+            {
+                new FileSequence { Seq = string.Empty, SeqName = "Escherichia coli" },
+                new FileSequence { Seq = string.Empty, SeqName = "Lactococcus lactis" }
+            };
+
+            SequenceModels sequenceModels = new SequenceModels
+            {
+                Seq = sequence,
+                Match = seqMatch,
+                TestSeq = testSequence,
+                FileSeq = fileSequence
+            };
+
+            return View(sequenceModels);
+        }
     }
 }

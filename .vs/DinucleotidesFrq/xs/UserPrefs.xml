@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{4B61CCB3-F598-4F1D-9C1F-6FA9E6F00268}|">
   <MonoDevelop.Ide.ItemProperties.DinucleotidesFrq PreferredExecutionTarget="chromium-browser" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DinucleotidesFrq/Models/TestModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DinucleotidesFrq/Controllers/HomeController.cs">
     <Files>
-      <File FileName="DinucleotidesFrq/Controllers/HomeController.cs" Line="27" Column="34" />
-      <File FileName="DinucleotidesFrq/App_Start/RouteConfig.cs" Line="16" Column="68" />
-      <File FileName="DinucleotidesFrq/Views/Test/Test.cshtml" Line="15" Column="38" />
-      <File FileName="DinucleotidesFrq/Controllers/TestController.cs" Line="15" Column="1" />
-      <File FileName="DinucleotidesFrq/Models/TestModel.cs" Line="21" Column="1" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/Controllers/HomeController.cs" Line="39" Column="17" />
+      <File FileName="DinucleotidesFrq/Views/Test/Test.cshtml" Line="13" Column="9" />
+      <File FileName="DinucleotidesFrq/Views/Home/Index.cshtml" Line="77" Column="49" />
+      <File FileName="DinucleotidesFrq/Controllers/SeqInputController.cs" Line="30" Column="17" />
+      <File FileName="DinucleotidesFrq/Models/SequenceModels.cs" Line="16" Column="25" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,13 +15,13 @@
             <Node name="DinucleotidesFrq" expanded="True">
               <Node name="App_Start" expanded="True" />
               <Node name="Content" expanded="True" />
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
               <Node name="Data" expanded="True" />
               <Node name="DinucCalculation" expanded="True" />
               <Node name="Helpers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="TestModel.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="DinucCalc" expanded="True" />
                 <Node name="Home" expanded="True" />
@@ -38,7 +38,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/home/alvydas/Projects/DinucleotidesFrq/DinucleotidesFrq/Controllers/HomeController.cs" relfile="DinucleotidesFrq/Controllers/HomeController.cs" line="44" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

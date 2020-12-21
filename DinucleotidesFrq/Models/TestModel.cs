@@ -1,33 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Web.Mvc;
 
 namespace DinucleotidesFrq.Models
 {
     public class TestModel
     {
-        public class Sequence
+        public TestModel()
         {
-            public string Seq { get; set; }
-            public int SeqLength { get; set; }
+            SeqList = new List<SelectList>();
+            SeqFileList = new List<SelectListItem>();
         }
 
-        public List<Sequence> Sequences { get; set; } = new List<Sequence>
-        {
-            new Sequence{Seq = "aaaaaaaaaggt", SeqLength = 12 }
-        };
+        public string Seq { get; set; } = "gagagacagatagtagcatgac";
 
-        public class FileSequence
-        {
-            public string FileName;
-            public string FileType;
-        }
-
-        public List<FileSequence> FileSequences { get; set; } = new List<FileSequence>
-        {
-            new FileSequence{ FileName = "SomeName", FileType = "SomeType" },
-            new FileSequence{ FileName = "OtherName", FileType = "OtherType" }
-        };
-
-        public string SelectedFile { get; set; }
+        public List<SelectList> SeqList { get; set; }
+        public List<SelectListItem> SeqFileList { get; set; }
     }
 }

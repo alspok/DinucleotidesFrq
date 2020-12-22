@@ -11,7 +11,7 @@
     </div>
     <div class="row  justify-content-center">
         @{
-            if(Model.SeqMatch)
+            if(Model.Match.Match)
             {
                 <p style="color: black">Enter A, C, G, T or a, c, g, t only</p>
             }
@@ -49,7 +49,7 @@
             <b> Test seq: </b>
         </div>
         <div class="col-md-7">
-            @Html.DisplayFor(t => t.TestSeq.TSeq[0])
+            @Html.DisplayFor(t => t.TestSeq[0].Seq)
         </div>
         <div class="col-md-2">
             <button name="choose" value="add-test" style="border: 0.5px solid black; border-radius: 5px;  background-color: lightgrey">Add</button>
@@ -74,8 +74,8 @@
             <b>Selec seq  from list: </b>        
         </div>
         <div class="col-md-9">
-            @Html.DropDownListFor(m => m.FileSeq.SelectedSeq,
-                new SelectList(Model.FileSeq.FSeq, "SeqName"),
+            @Html.DropDownListFor(m => m.FileSeq.SeqName,
+                new SelectList(Model.FSeqs),
                 "-- Select seq --",
                 new {@class="select-style"})
                 <button name="choose" value="add-from-list" style="border: 0.5px solid black; border-radius: 5px;  background-color: lightgrey">Add</button>

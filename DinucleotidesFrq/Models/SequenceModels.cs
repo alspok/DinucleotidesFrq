@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Web.Mvc;
 
 namespace DinucleotidesFrq.Models
 {
@@ -9,7 +10,8 @@ namespace DinucleotidesFrq.Models
         public Sequence Seq { get; set; }
         public List<TestSequence> TestSeq {get;set;}
         public RandomSequence RandomSeq { get; set; }
-        public List<FileSequence> FileSeq { get; set; }
+        public FileSequence FileSeq { get; set; }
+        public List<string> FSeqs { get; set; }
         public GBSequence GBSeq { get; set; }
         public OutputSequence OutputSeq { get; set; }
         public Dinucleotides Dinuc { get; set; }
@@ -25,6 +27,7 @@ namespace DinucleotidesFrq.Models
     {
         public string Seq { get; set; }
         public string SeqName { get; set; }
+        public int SeqLength { get; set; }
     }
 
     public class TestSequence
@@ -46,6 +49,11 @@ namespace DinucleotidesFrq.Models
         public string SeqName { get; set; }
         public string SeqFileName { get; set; }
     }
+
+    public class FileSeq
+    {
+        public string SeqFileName { get; set; }
+     }
 
     public class GBSequence
     {

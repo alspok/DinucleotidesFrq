@@ -11,8 +11,10 @@ namespace DinucleotidesFrq.Controllers
             Sequence sequence = new Sequence
             {
                 Seq = "agacagacagacagatagatgtc",
-                SeqName = "SomeSeq"
+                SeqName = "SomeSeq",
             };
+
+            sequence.SeqLength = sequence.Seq.Length;
 
             SeqMatch seqMatch = new SeqMatch
             {
@@ -27,10 +29,17 @@ namespace DinucleotidesFrq.Controllers
                 new TestSequence { Seq = "agcgggctagtgcgtgcagcgggctagtgcgtg", SeqName = "Even seq length" }
             };
 
-            List<FileSequence> fileSequence = new List<FileSequence>
+            FileSequence fileSequence = new FileSequence
             {
-                new FileSequence { Seq = string.Empty, SeqName = "Escherichia coli" },
-                new FileSequence { Seq = string.Empty, SeqName = "Lactococcus lactis" }
+                Seq = string.Empty,
+                SeqName = string.Empty,
+                SeqFileName = string.Empty
+            };
+
+            List<string> fSeqs = new List<string>
+            {
+                "Esherichia coli",
+                "Lactococcus lactis"
             };
 
             SequenceModels sequenceModels = new SequenceModels
@@ -38,6 +47,7 @@ namespace DinucleotidesFrq.Controllers
                 Seq = sequence,
                 Match = seqMatch,
                 TestSeq = testSequence,
+                FSeqs = fSeqs,
                 FileSeq = fileSequence
             };
 

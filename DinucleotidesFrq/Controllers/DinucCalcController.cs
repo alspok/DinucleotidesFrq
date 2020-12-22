@@ -15,11 +15,11 @@ namespace DinucleotidesFrq.Controllers
         {
             Match match = new Match();
             match.MatchSeq(sequenceModels);
-            if (sequenceModels.SeqMatch)
+            if (sequenceModels.Match.Match)
             {
                 DiCalc diCalc = new DiCalc();
                 diCalc.Calc(sequenceModels);
-                sequenceModels.SeqMatch = true;
+                sequenceModels.Match.Match = true;
 
                 return View(sequenceModels);
             }

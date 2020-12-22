@@ -9,7 +9,7 @@ namespace DinucleotidesFrq.Helpers
         public void  MatchSeq(SequenceModels sequenceModels)
         {
             if (!Regex.IsMatch(sequenceModels.Seq.Seq, @"^[ACGTacgt]*$"))
-                sequenceModels.SeqMatch = false;
+                sequenceModels.Match.Match = false;
         }
     }
 }

@@ -1,14 +1,16 @@
 ﻿<Properties StartupConfiguration="{4B61CCB3-F598-4F1D-9C1F-6FA9E6F00268}|">
   <MonoDevelop.Ide.ItemProperties.DinucleotidesFrq PreferredExecutionTarget="chromium-browser" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DinucleotidesFrq/Controllers/HomeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DinucleotidesFrq/Helpers/Match.cs">
     <Files>
-      <File FileName="DinucleotidesFrq/Controllers/HomeController.cs" Line="31" Column="1" />
+      <File FileName="DinucleotidesFrq/Controllers/HomeController.cs" Line="14" Column="36" />
       <File FileName="DinucleotidesFrq/Controllers/SeqInputController.cs" Line="30" Column="17" />
+      <File FileName="DinucleotidesFrq/Views/Shared/_Layout.cshtml" Line="25" Column="50" />
       <File FileName="DinucleotidesFrq/Helpers/Match.cs" Line="12" Column="32" />
-      <File FileName="DinucleotidesFrq/Models/SequenceModels.cs" Line="17" Column="1" NotebookId="1" />
-      <File FileName="DinucleotidesFrq/Views/Home/Index.cshtml" Line="77" Column="34" NotebookId="1" />
-      <File FileName="DinucleotidesFrq/Controllers/DinucCalcController.cs" Line="22" Column="43" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/Models/SequenceModels.cs" Line="38" Column="1" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/Views/Home/Index.cshtml" Line="39" Column="32" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/Controllers/DinucCalcController.cs" Line="19" Column="14" NotebookId="1" />
       <File FileName="DinucleotidesFrq/Helpers/SequenceFile.cs" Line="29" Column="32" NotebookId="1" />
+      <File FileName="DinucleotidesFrq/Content/Site.css" Line="2" Column="23" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +22,9 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
               <Node name="DinucCalculation" expanded="True" />
-              <Node name="Helpers" expanded="True" />
+              <Node name="Helpers" expanded="True">
+                <Node name="Match.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="DinucCalc" expanded="True" />

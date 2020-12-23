@@ -1,16 +1,14 @@
 ﻿.header-bar {
-    padding:    20px 20px;
     vertical-align: middle;
-    height: 80px;
-    background-color: lightgrey;
+    background-color: white;
 }
 
 .footer-bar{
-  padding:    10px 15px;
-  background-color:    lightgrey;
-  border-top:  1px solid #ddd;
-  border-bottom-right-radius:   3px;
-  border-bottom-left-radius::   3px;
+  padding: 10px 15px;
+  background-color: whitesmoke;
+  border-top: 1px solid #ddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .text-area{

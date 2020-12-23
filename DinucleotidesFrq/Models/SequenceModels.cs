@@ -9,6 +9,7 @@ namespace DinucleotidesFrq.Models
     {
         public Sequence Seq { get; set; }
         public List<TestSequence> TestSeq {get;set;}
+        public TestSequence SelectedTestSeq { get; set; }
         public RandomSequence RandomSeq { get; set; }
         public FileSequence FileSeq { get; set; }
         public List<string> FSeqs { get; set; }
@@ -34,7 +35,6 @@ namespace DinucleotidesFrq.Models
     {
         public string Seq { get; set; }
         public string SeqName { get; set; }
-        public string SeqSelect { get; set; }
     }
 
     public class RandomSequence

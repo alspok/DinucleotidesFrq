@@ -10,10 +10,9 @@ namespace DinucleotidesFrq.Controllers
         {
             Sequence sequence = new Sequence
             {
-                Seq = "agacagacagacagatagatgtc",
-                SeqName = "SomeSeq",
+                Seq = string.Empty,
+                SeqName = "SomeSeq"
             };
-
             sequence.SeqLength = sequence.Seq.Length;
 
             SeqMatch seqMatch = new SeqMatch
@@ -27,6 +26,12 @@ namespace DinucleotidesFrq.Controllers
                 new TestSequence { Seq = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",  SeqName = "Mono dinucs"},
                 new TestSequence { Seq = "agcgggctagtgcgtgagcgggctagtgcgtg", SeqName = "Odd seq length" },
                 new TestSequence { Seq = "agcgggctagtgcgtgcagcgggctagtgcgtg", SeqName = "Even seq length" }
+            };
+
+            TestSequence selectedTestSeq = new TestSequence
+            {
+                Seq = string.Empty,
+                SeqName = string.Empty
             };
 
             FileSequence fileSequence = new FileSequence
@@ -47,6 +52,7 @@ namespace DinucleotidesFrq.Controllers
                 Seq = sequence,
                 Match = seqMatch,
                 TestSeq = testSequence,
+                SelectedTestSeq = selectedTestSeq,
                 FSeqs = fSeqs,
                 FileSeq = fileSequence
             };
